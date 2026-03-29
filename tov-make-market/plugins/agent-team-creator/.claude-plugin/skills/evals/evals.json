@@ -1,0 +1,23 @@
+{
+  "skill_name": "agent-team-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "쇼핑몰 웹앱을 만들건데, AI 기반 상품 추천 기능도 포함해야 해. 혼자 만들면 품질이 들쭉날쭉하니까 agent team을 설계해줘.",
+      "expected_output": "분석→수집→계획→구현 4단계를 따르는 설계 문서와 코드 스캐폴딩. Planner+Generator+Evaluator 3-agent 구조, 평가 기준 포함.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "지금 단일 agent로 블로그 글을 자동 생성하고 있는데, 결과물이 너무 뻔하고 템플릿 냄새가 나. 품질을 올릴 수 있게 시스템을 개선해줘.",
+      "expected_output": "기존 시스템 진단 후, Generator-Evaluator 분리 제안. 독창성 중심 평가 기준 설계. 분석 단계에서 문제점 진단에 초점.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "매주 마케팅 데이터를 분석해서 리포트를 만들어야 하는데, 분석 정확도가 중요해. 이걸 위한 agent 시스템을 설계해줘.",
+      "expected_output": "Generator+Evaluator 2-agent 구조. 정확성 중심 평가 기준. 통계적 검증을 수행하는 Evaluator. 반복 파이프라인 설계.",
+      "files": []
+    }
+  ]
+}
