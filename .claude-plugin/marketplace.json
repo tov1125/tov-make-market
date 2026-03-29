@@ -22,6 +22,15 @@
             "author": {
                 "name": "tov1125"
             }
+        },
+        {
+            "name": "init-free",
+            "source": "./plugins/init-free",
+            "description": "새 프로젝트 초기 환경 자동 셋업 (CLAUDE.md + settings.local.json 생성)",
+            "version": "1.0.0",
+            "author": {
+                "name": "tov1125"
+            }
         }
     ]
 }

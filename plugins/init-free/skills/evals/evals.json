@@ -1,0 +1,23 @@
+{
+  "skill_name": "init-free",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "빈 프로젝트 디렉토리에서 /init-free 실행. 작업 디렉토리: /tmp/init-free-test/empty-project",
+      "expected_output": "CLAUDE.md와 .claude/settings.local.json이 생성됨. CLAUDE.md는 빈 프로젝트용 최소 내용, settings는 범용 허용 규칙 포함",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "Node.js 프로젝트(package.json 있음)에서 /init-free 실행. 작업 디렉토리: /tmp/init-free-test/nodejs-project",
+      "expected_output": "CLAUDE.md에 npm scripts(dev, build, test, lint) 포함. settings에 node/npm 관련 규칙 포함",
+      "files": ["/tmp/init-free-test/nodejs-project/package.json"]
+    },
+    {
+      "id": 2,
+      "prompt": "이미 settings.local.json이 있는 프로젝트에서 /init-free 실행. 작업 디렉토리: /tmp/init-free-test/existing-settings-project",
+      "expected_output": "기존 settings의 allow/deny 규칙이 유지되면서 새 규칙이 병합됨. 기존 deny 규칙(rm -rf) 보존",
+      "files": ["/tmp/init-free-test/existing-settings-project/.claude/settings.local.json"]
+    }
+  ]
+}

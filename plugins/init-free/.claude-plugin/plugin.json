@@ -1,0 +1,8 @@
+{
+    "name": "init-free",
+    "description": "새 프로젝트 초기 환경 자동 셋업 (CLAUDE.md + settings.local.json)",
+    "version": "1.0.0",
+    "author": {
+        "name": "tov"
+    }
+}
